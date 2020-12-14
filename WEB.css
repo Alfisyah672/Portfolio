@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+* {
+	padding:0;
+	margin:0;
+	font-family: 'caveat', sans-serif;
+	color: white ;
+	
+}
+header {
+    height:80px;
+    background-image: url(img/vintage-wallpaper.png);
+}
+header h1 {
+	display: inline-block;
+	float: left;
+	padding:15px 24px;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+header h1 a {
+	transition: .3s;
+	
+}
+header h1 a:hover {
+	color: crimson;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	padding:24px;
+	display: inline-block;
+}
+header ul li a {
+	transition: .3s;
+}
+header ul li a:hover {
+	color: crimson;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width:100%;
+	margin:0 auto;
+}
+.container h3 {
+	color: lightslategray;
+}
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.mobile-menu {
+	float: right;
+	display: none;
+	padding:18px;
+}
+.mobile-menu:hover {
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width:300px;
+	background-image: url(img/mochaGrunge.png);
+	transition: .3s;
+	z-index: 9999;
+}
+.sidebar ul li a {
+	color: #fff;
+}
+.sidebar ul li {
+	padding:24px;
+	transition: .3s;
+	transition-property: background-color;
+}
+.sidebar ul li:hover {
+	background-color: red;
+}
+#check:checked ~ .sidebar {
+	left: 0;
+}
+.banner {
+	background-image: url(img/degree_fabric.png);
+	height: 300px;
+	padding:150px 0;
+}
+section {
+	padding:50px 0;
+}
+
+
+.banner img {
+	width: 400px;
+	border-radius: 15px;
+	box-shadow: 0 3px 5px white;
+	margin-bottom: 10px;	
+	float: right;
+	
+	
+	
+}
+
+#about {
+	background-image: url(img/vintage-concrete.png);
+}
+#home h3 {
+	color: black;
+}
+#about h3 {
+	color: black;
+}
+#skills h3 {
+	color: black;
+}
+#Gallery h3 {
+	color: black;
+}
+#contact h3 {
+	color: black;
+}
+#social-media h3 {
+	color: black;
+}
+
+
+.banner p,
+.banner span {
+	color: red;
+}
+.banner .text-1 .text-2 .text-3 .text-4 {
+	padding: 25px 0;
+	float: right;
+}
+.banner .text-1 {
+	font-size: 25px;
+	color: red;
+	
+}
+.banner .text-2 {
+	font-size: 30px;
+	color: black;
+}
+.banner .text-3 {
+	font-size: 28px;
+	color: black;
+}
+.banner .text-4 {
+	font-size: 29px;
+	color: black;
+}
+.banner-left {
+	padding-left:24px;
+}
+.Gallery {
+	background-image: url(img/dust_scratches.png);
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+section h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-image: url(img/dirty_old_shirt.png);
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: #F84744;
+	left: calc(50% - 20px);
+}
+#about p {
+	text-align: center;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	color: black;
+	font-size: 25px;
+}
+#skills,
+#contact {
+	background-image: url(img/degree_fabric.png);
+}
+#skills .bar {
+	height: 30px;
+	background-image: url(img/grey_wash_wall.png);
+	border:1px solid #ddd;
+    margin: 5px 0 20px 0;
+    color: white;
+}
+#skills h4 {
+	color: black;
+}
+.bar .nilai {
+	height:30px;
+	background-color: blue;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.premier-pro {
+    width:80%;
+}
+.html {
+	width:60%;
+}
+.css {
+	width: 50%;
+}
+.ps {
+	width: 70%;
+}
+.pg {
+	width: 80%;
+}
+#social-media,
+#about,
+#Gallery {
+	background-image: url(img/y-so-serious-white.png);
+}
+.Foto {	
+	width:25%;
+	box-sizing: border-box;
+	padding: 5px;
+	float: left;
+	margin-bottom: 15px;
+}
+.Foto img {
+	width: 300px;
+	height: 270px;
+	border-radius: 10px;
+}
+.Foto a:hover img {
+	transform: scale(1.4);
+}
+.con {
+	width: 50%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 50px 30px;
+	display: inline-block;
+	float: left;
+}
+
+.con h4 {
+	padding-bottom: 10px;
+	border: 1px solid black;
+	margin-bottom: 15px;
+	color: black;
+}
+.Email {
+	display: inline-block;
+	color: black;
+	border-bottom: 2px solid black;
+}
+.alamat {
+	display: inline-block;
+	color: black;
+	border-bottom: 2px solid black;
+}
+.sosmed {
+	width: 33.33%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 50px 30px;
+	display: inline-block;
+	float: left;
+}
+.sosmed h4 {
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+	margin-bottom: 15px;
+	color: black;
+}
+.sosmed h5 {
+	color: black;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	font-weight: bold;
+	border-bottom: 2px solid black;
+	
+	
+}
+.instagram {
+	color: black;
+	border: 3px solid black;
+}
+.twitter {
+	color: black;
+	border: 3px solid black;
+}
+.facebook {
+	color: black;
+	border: 3px solid black;
+}	
+footer {
+	background-image: url(img/vintage-wallpaper.png);
+	padding:50px;
+	text-align: center;
+}
+footer small {
+	color: white;
+	font-size: 25px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media (max-width: 768px){
+	.mobile-menu {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+	.Foto {
+		width:50%;
+	}
+	.Foto-1 {
+		width: 50%;
+	}
+	.col-3 {
+		width:100%;
+	}
+} 
